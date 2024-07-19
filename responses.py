@@ -25,8 +25,4 @@ def handle_response(message) -> str:
 """
     elif 'who are you' in p_message:
         return 'It\'sa me! a Luigii!'
-    else:
-        return choice(['Sorry, no clue what you\'re saying',
-                       'Say again?',
-                       'I don\'t understand...'])
     
