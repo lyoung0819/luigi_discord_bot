@@ -14,7 +14,15 @@ def handle_response(message) -> str:
     elif 'bye' in p_message:
         return 'Bye bye!'
     elif 'help' in p_message:
-        return "`This is a help message that you can modify.`"
+        return """
+        I'll respond to:
+        - hello
+        - how are you
+        - roll
+        - bye
+        - who are you
+        - help            
+"""
     elif 'who are you' in p_message:
         return 'It\'sa me! a Luigii!'
     else:
