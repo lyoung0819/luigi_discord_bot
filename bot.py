@@ -1,6 +1,12 @@
 import discord
 import responses
-from . import token
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+token = os.getenv('MY_TOKEN')
+
 
 async def send_message(message, user_message, is_private):
     try:
